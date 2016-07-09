@@ -1,0 +1,6 @@
+<%= @idea.title %><br>
+<%= @idea.description %><br>
+<%= @idea.img %><br>
+<%= link_to "수정", edit_idea_path(@idea) %>
+<%= link_to "삭제", idea_path(@idea), method: :delete %>
+<%= link_to "뒤로가기", ideas_path %>

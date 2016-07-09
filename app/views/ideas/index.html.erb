@@ -1,0 +1,9 @@
+<%= link_to "작성하기", new_idea_path %>
+<% @ideas.each do |i| %>
+  <%= link_to idea_path(i) do %>
+    <%= i.title %><br>
+    <%= i.description %><br>
+    <%= i.img %>
+  <% end %>
+  <hr>
+<% end %>

@@ -1,0 +1,5 @@
+<%= form_for @idea do |humming| %>
+  <%= label_tag :summary %>
+  <%= text_field_tag :summary %><br>
+  <%= render partial: 'form_input', locals: {f: humming} %>
+<% end %>
